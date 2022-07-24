@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">THE MOST IMPORTANT FORM</h1>
+    <p class="h1text" id="description">This form is the most important form you will ever fill out. It has so many details. The choices you make here are permanent. They will define you. Your ancestors will look here and make their final opinions of you based on your answers here. Good luck. </p>
+    </body>
+   
+   <form id="survey-form"> 
+      <label id="name-label"><p>Name</p>
+      <input class="form-control" placeholder="Enter Your Name" id="name" type="text" required> </label>
+<p></p>
+    <label id="email-label"><p>Email</p> <input class="form-control" placeholder="Enter Your Email" id="email" type="email" required> </label>
+    <p></p>
+      <label id="number-label"><p>Age (optional) </p><input class="form-control" placeholder="Enter Your Age" id="number" type="number" required min="13" max="120"> </label>
+
+  <p>What is the best dessert?</p>
+<label>
+          <select class="form-control" id="dropdown" name="dessert">
+            <option value="">(select one)</option>
+            <option value="1">Ice Cream</option>
+            <option value="2">Cake</option>
+            <option value="3">Oreo Milkshake</option>
+            <option value="4">Other</option>
+          </select>
+        </label></p>
+        <p>Do you like cats or dogs?</p>
+        <label><input value="dogs" type="radio" name="animal" /> Cats </label>
+        <label><input value="cats" type="radio" name="animal" class="inline" /> Dogs</label>
+
+ <label><p>Select the foods you ate today:</p>
+    <label><input value="food" type="checkbox">Rice</input>
+        </label>
+        <label><input value="food" type="checkbox">Chips</input>
+        </label>
+        <label><input value="food" type="checkbox">Cereal</input>
+        </label>
+        <label><input value="food" type="checkbox">Ramen</input>
+        </label>
+        <label><input value="food" type="checkbox">Spaghetti</input>
+        </label>
+        <label><p>Any Other Comments?</p>
+        <textarea class="form-control text" placeholder="Enter your comments here"></textarea></p>
+        <button class="button" id="submit">Submit your response     
+      </form>
